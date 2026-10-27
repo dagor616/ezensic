@@ -1,0 +1,97 @@
+{
+    "info": {
+        "_postman_id": "36cecae5-9895-4fbc-9b8f-6cd2d3ca403c",
+        "name": "ezenzic",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://localhost:8080/api/usuarios",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8080/api/productos",
+                    "path": [
+                        "api",
+                        "productos"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "header": [
+                    {
+                        "key": "User-Agent",
+                        "value": "steam.com"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"nombre\": \"mascarilla facial\",\n    \"descripcion\": \"mascarilla hidratante\",\n    \"precio\": 55000.0,\n    \"stock\": 3,\n    \"id\": \"14a78a13-94vt-416d-b3c0-6225d246f1d0\"\n  }"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8080/api/citas",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/citas",
+                    "path": [
+                        "api",
+                        "citas"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8080/api/paquetes",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/paquetes",
+                    "path": [
+                        "api",
+                        "paquetes"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8080/api/usuarios",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/usuarios",
+                    "path": [
+                        "api",
+                        "usuarios"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        }
+    ]
+}
